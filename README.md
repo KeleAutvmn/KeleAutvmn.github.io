@@ -1,20 +1,10 @@
-## Description
-This is the personal website of Allen Akinkunle, hosted by [Github Pages](https://pages.github.com/). You can check the website out on [allenkunle.me](http://www.allenkunle.me).
+# jekyllDecent
+[![Build Status](https://travis-ci.org/jwillmer/jekyllDecent.svg?branch=gh-pages)](https://travis-ci.org/jwillmer/jekyllDecent) 
+[![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](#license)
+[![Release v1.1.7](https://img.shields.io/badge/release-v1.1.8-blue.svg)](https://github.com/jwillmer/jekyllDecent/releases/tag/1.1.8)
 
-## Say 'Hello'
-I am currently a Data Scientist based in London, United Kingdom. I work within EY's Data & Analytics team (Transaction Advisory Services service line). I write about data science, machine learning, data visualisation and software development.
+This is a blog template for a static site generator named [Jekyll](https://jekyllrb.com/docs/home/) based on a [Ghost](https://ghost.org) template named [Decent](https://github.com/serenader2014/decent). 
 
-I tweet about random stuff: [**Twitter**](http://twitter.com/allenakinkunle)
+Installation instructions, features, previews and more can be found in the **[GitHub generated blog](https://jwillmer.github.io/jekyllDecent)**. This blog is automatically generated out of the source code in the `gh-pages` branch. If you like to see the theme in production have a look at [jwillmer.de](https://jwillmer.de).
 
-Send me an email: [**Email**](mailto:hello@allenkunle.me)
-
-Check out my LinkedIn Profile: [**LinkedIn**](http://uk.linkedin.com/in/allenkunle)
-
-I answer questions on Stack Overflow: [**Stack Overflow**](http://stackoverflow.com/users/1748587/akinkunle-allen)
-
-## License
-You may not reuse anything within the following folders without my permission:
-* _posts/
-* img/
-
-All other directories and files are MIT Licensed. Feel free to use the HTML and CSS as you please.
+[![](https://raw.githubusercontent.com/jwillmer/jekyllDecent/gh-pages/media/img/2016-06-08-Readme-front-page-previewe.jpg)](https://jwillmer.github.io/jekyllDecent)

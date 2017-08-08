@@ -1,32 +1,37 @@
 ---
 layout: default
 ---
-<article id="post-page">
-	<h2 class="title">{{ page.title }}</h2>
+<main class="content" role="main">
+    <article class="post single-post" itemscope itemtype="http://schema.org/BlogPosting">
 
-	<div id="metadata">
-	  <time datetime="{{ page.date | date_to_xmlschema }}" class="time"><i class="fa fa-clock-o"></i>{{ page.date | date_to_string }}</time>
-	  <p class="tags"><i class="fa fa-tags"></i>
-	    {% for tag in page.tags %}
-	      <a href="/tags/{{ tag }}">{{ tag }}</a>
-	    {% endfor %}
-	  </p>
-	</div>
+        <header class="post-header short-diver">
+            <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+            <section class="post-meta">
+                <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+                on
+                {% for tag in page.tags limit:5 %}
+                <span>{{ tag }}</span>
+                {% endfor %}
+            </section>
+        </header>
 
-	<div class="content">
+        <section class="post-content short-diver" itemprop="articleBody">
+            {{content}}
+        </section>
 
-		{{ content }}
+        <footer class="post-footer">
+            {% include authorinfo.html param=page.author %}
+        </footer>
 
-	</div>
+        {% if page.comments %}
+    		<div class="comments">
+    			<a href="javascript:;" class="view-comments"><i class="fa fa-comments"></i>View Comments...</a>
+    			<div id="disqus_thread"></div>
+    		</div>
+    		{% endif %}
 
-	<div class="footer">
-		<!-- Share Buttons -->
-		{% include share.html %}
+    </article>
+</main>
 
-		<!-- Show next and previous links -->
-		{% include page-navigation.html %}
-
-		<!-- Comments -->
-		{% include comments.html %}
-	</div>
-</article>
+{% include photoswipe.html %}
+{% include post_scripts.html %}
